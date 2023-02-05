@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/currency-converter/static/js/main.d4d11030.js",
+    "static/js/787.b1d4fb56.chunk.js": "/currency-converter/static/js/787.b1d4fb56.chunk.js",
+    "index.html": "/currency-converter/index.html",
+    "main.d4d11030.js.map": "/currency-converter/static/js/main.d4d11030.js.map",
+    "787.b1d4fb56.chunk.js.map": "/currency-converter/static/js/787.b1d4fb56.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.d4d11030.js"
+  ]
+}

@@ -19,6 +19,13 @@ function App() {
     setConvertInfo({ have, get });
   }, [haveCarrency, willGetCarrency]);
 
+    useEffect(() => {
+        if(data){
+            const init = data.find(i => i.CharCode === 'RUB')
+            setWillGetCarrency(init)
+        }
+    }, [data]);
+
   const onChangeHave = (value = money.have, currencyHave, currencyGet) => {
     const get = calculation(value, currencyHave, currencyGet);
     setMoney({ get, have: value });
@@ -68,6 +75,7 @@ function App() {
                 convertInfo={convertInfo.have}
                 onSelect={(currency) => {
                   setHaveCarrency(currency);
+                  console.log({currency})
                   onChangeHave(money.have, currency, willGetCarrency);
                 }}
                 onChangeValue={(value) =>

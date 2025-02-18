@@ -9,7 +9,7 @@ const RUB = {
   Previous: 1,
   Value: 1,
 };
-const templateCurrencyQueue = ["RUB", "USD", "EUR", "GBP"];
+const templateCurrencyQueue = ["RUB", "CNY", "USD", "EUR", "GBP"];
 
 export const currencyMarketAPI = createApi({
   reducerPath: "currencyAPI",
